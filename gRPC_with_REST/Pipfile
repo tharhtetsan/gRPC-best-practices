@@ -8,7 +8,7 @@ grpcio = "*"
 google = "*"
 google-api-python-client = "*"
 grpcio-tools = "*"
-tensorflow = "*"
+flask = "*"
 
 [dev-packages]
 

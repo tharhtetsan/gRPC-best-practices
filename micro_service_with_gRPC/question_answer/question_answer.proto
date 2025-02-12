@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package questionanswer;
+
+service QuestionAnswerService {
+  rpc Predict (QARequest) returns (QAResponse);
+}
+
+message QARequest {
+  string context = 1;
+  string question = 2;
+}
+
+message QAResponse {
+  string answer = 1;
+  float score = 2;
+  int32 start = 3;
+  int32 end = 4;
+}

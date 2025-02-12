@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  service_image_classification:
+    build:
+      context: .
+      dockerfile: service_image_classification/Dockerfile
+    container_name: service_image_classification
+    ports:
+      - "50051:50051"
+    networks:
+      - ml_network
+
+  service_question_answer:
+    build:
+      context: .
+      dockerfile: service_question_answer/Dockerfile
+    container_name: service_question_answer
+    ports:
+      - "50052:50052"
+    networks:
+      - ml_network
+
+  service_fastapi_gateway:
+    build:
+      context: .
+      dockerfile: service_fastapi_gateway/Dockerfile
+    container_name: service_fastapi_gateway
+    ports:
+      - "8000:8000"
+    depends_on:
+      - service_image_classification
+      - service_question_answer
+    networks:
+      - ml_network
+
+networks:
+  ml_network:
+    driver: bridge

@@ -1,7 +1,7 @@
 # gRPC-best-practices
 
 This Repo is all about gRPC best practices from "Hello_world" to "Streaming with gRPC" in Python.
-# REST vs gRPC: Detailed Comparison
+### REST vs gRPC: Detailed Comparison
 
 When designing APIs for microservices, two of the most popular choices are **REST** (Representational State Transfer) and **gRPC** (Google Remote Procedure Call). Each has unique advantages and trade-offs depending on the use case.
 
