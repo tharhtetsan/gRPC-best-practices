@@ -3,7 +3,7 @@
 import grpc
 import warnings
 
-import question_answer_pb2 as question__answer__pb2
+import question_answer.question_answer_pb2 as question__answer__pb2
 
 GRPC_GENERATED_VERSION = '1.68.0'
 GRPC_VERSION = grpc.__version__

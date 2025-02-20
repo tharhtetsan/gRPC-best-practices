@@ -1,5 +1,11 @@
 import grpc
 from concurrent import futures
+import os
+print(os.getcwd())
+print(os.listdir())
+
+print(os.listdir("classification"))
+
 import classification.classification_pb2 as pb2
 import classification.classification_pb2_grpc as pb2_grpc
 import tensorflow as tf

@@ -7,7 +7,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 
 # Copy classification stubs
-COPY ../classification /app/classification
+COPY ./classification/ /app/classification
 
 
 

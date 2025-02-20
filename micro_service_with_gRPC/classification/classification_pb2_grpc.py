@@ -3,7 +3,7 @@
 import grpc
 import warnings
 
-import classification_pb2 as classification__pb2
+import classification.classification_pb2 as classification__pb2
 
 GRPC_GENERATED_VERSION = '1.68.0'
 GRPC_VERSION = grpc.__version__

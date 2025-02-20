@@ -4,4 +4,5 @@ protobuf==5.29.3
 numpy==2.0.2
 pydantic
 uvicorn
+python-multipart
 fastapi
